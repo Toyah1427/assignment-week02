@@ -1,6 +1,6 @@
 const pickleBtn = document.getElementById("pickleBtn");
 const upgradeBtn = document.getElementById("upgradeBtn");
-const picklesSpan = document.getElementById("picklesSpan");
+const pickleSpan = document.getElementById("pickleSpan");
 const cpsSpan = document.getElementById("cpsSpan");
 
 // default starting value for stats
@@ -32,7 +32,7 @@ function buyUpgrade() {
 }
 
 function updatePage() {
-  picklesSpan.textContent = stats.pickleCount;
+  pickleSpan.textContent = stats.pickleCount;
   cpsSpan.textContent = stats.cps;
 }
 
