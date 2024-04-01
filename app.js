@@ -14,6 +14,7 @@ if (storageStats !== null) {
     stats.pickleCount = storageStats.pickleCount;
     stats.cps = storageStats.cps;
     updatePage();
+    
 }
 
 function buyPickle() {
