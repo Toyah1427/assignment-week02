@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://cdn.wallpapersafari.com/21/62/lOUYbV.jpg");
+    background-image: url("https://media.istockphoto.com/id/1481105055/vector/green-traditional-gingham-seamless-background.jpg?s=612x612&w=0&k=20&c=3_1hO5Ly7Za54OrWn4uSwD8a7ybwlBsD8XIGRy1VCjo=");
 
 }
 
@@ -19,4 +19,29 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: monospace;
+}
+
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    border-color:green;
+    border-bottom: 5px;
+    border-style: dashed;
+    font-size: 40px;
+    text-align: center;
+    color:green;
+    font-family: monospace;
+    background-color: white;
+    padding-bottom: 4px;
+}
+
+img {
+    border: 7px solid #008000;
+}
+
+b {
+    font-size: 30px;
 }

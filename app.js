@@ -1,6 +1,8 @@
 const pickleBtn = document.getElementById("pickleBtn");
 const upgradeBtn = document.getElementById("upgradeBtn");
 const pickleJar = document.getElementById("pickleJar");
+const spicyPickle = document.getElementById("spicyPickle");
+const pickleJuice = document.getElementById("pickleJuice");
 const pickleSpan = document.getElementById("pickleSpan");
 const cpsSpan = document.getElementById("cpsSpan");
 
@@ -33,7 +35,21 @@ function buyUpgrade() {
 
 function pickleJarUpgrade() {
     stats.cps++;
-    stats.pickleCount -= 30;
+    stats.pickleCount -= 100;
+    updatePage();
+    updateStorage();
+}
+
+function spicyPickleBoost() {
+    stats.cps++;
+    stats.pickleCount -= 50;
+    updatePage();
+    updateStorage();
+}
+
+function sourPickleJuice() {
+    stats.cps++;
+    stats.pickleCount -= 70;
     updatePage();
     updateStorage();
 }
@@ -50,6 +66,8 @@ function updateStorage() {
 pickleBtn.addEventListener("click", buyPickle);
 upgradeBtn.addEventListener("click", buyUpgrade);
 pickleJar.addEventListener("click", pickleJarUpgrade);
+spicyPickle.addEventListener("click", spicyPickleBoost);
+pickleJuice.addEventListener("click", sourPickleJuice);
 
 setInterval(function () {
     stats.pickleCount += stats.cps;
